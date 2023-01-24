@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Walmart Survey Form</title>
+    <link rel='stylesheet' href='styles.css'>
+  </head>
+  <body>
+    <h1 id='title'>Walmart Survey Form</h1>
+    <p id='description'>Thank you for particpating in this survey</p>
+    <form id='survey-form' action='https://register-demo.freecodecamp.org' method='post'>
+      <fieldset>
+        <label for='name' id='name-label'> Name <br><input class='user-info' required id='name' type='text' name='name' placeholder='Enter your name'/></label>
+        <label for='email' id='email-label'> Email <br><input class='user-info' required id='email' type='email' name='email' placeholder='Enter your email'/></label>
+        <label for='number' id='number-label'> Age <em class='in-em'>(optional) <br></em><input class='user-info' id='number' type='number' name='number' placeholder='Age' min='13' max='120'/></label>
+        <label for='phone' class='phone-label'> Phone number <em class='in-em'>(optional)<br></em> <input class='user-info' id='phone' name='phone' type='number' pattern='[0-9]{10,}' placeholder='Phone number' /></label>
+      </fieldset>
+      <fieldset class='question-1'>
+        <label id='quest' class='label'>Have you heard about Walmart?</label>
+        <label class='questions' class='label' for='yes'><input id='yes' name='yes-no' type='radio' class='inline' value='yes'/> Yes</label>
+        <label class='questions' class='label' for='no'><input id='no' name='yes-no' type='radio' class='inline' value='no'/> No</label>
+      </fieldset>
+      <fieldset>
+        <label for='dropdown' class='quest'>How did you learn about Walmart?<br>
+        <select id='dropdown' name='dropdown' class='user-info'>
+          <option value=''>Select an option</option>
+          <option value='1'>Online</option>
+          <option value='2'>Friend/Family</option>
+          <option value='3'>News</option>
+          <option value='4'>Tiktok</option>
+        </select>
+        </label>
+        </fieldset>
+        <fieldset>
+          <label class='label' class='quest'>Are you satisfied with Walmart's service?</label>
+          <label for='yes1' class='questions'><input name='yes1-no1' type='radio' value='yes' class='inline'/> Yes</label>
+          <label for='no1' class='questions'><input name='yes1-no1' type='radio' value='no' class='inline'/> No</label>
+        </fieldset>
+        <fieldset>
+          <label class='quest label'> What would you like to see improved? <em class='in-em'>(check all that apply)</em></label>
+          <label class='questions'><input type='checkbox' value='5'> Customer Service</label>
+          <label class='questions'><input type='checkbox' value='6'> Product Quality</label>
+          <label class='questions'><input type='checkbox' value='7'> 
+          Cleaniness</label>
+          <label class='questions'><input type='checkbox' value='8'> Product Availability</label>
+          <label class='questions'><input type='checkbox' value='9'> Customer Safety</label>
+        </fieldset>        
+        <fieldset>
+          <label for='feedback' class='quest'> Any comments or feedback?<br>
+          <textarea id='feedback' rows='3' cols='30' class='user-info' placeholder='comment here...'></textarea></label>
+      </fieldset>
+      
+      <fieldset>
+        <label for='submit' class='submit'> <input id='submit' name='submit' type='submit' /></label>
+      </fieldset>
+      <footer>
+        <p>Survey Creater By: Kiara.H  @ <a href='https://twitter.com/kiarahoheb'> Twitter</a></p>
+      </footer>
+    </form>
+  </body>
+</html>
